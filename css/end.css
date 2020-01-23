@@ -1,0 +1,510 @@
+@charset "UTF-8"
+    
+
+    
+    
+    
+* {box-sizing: border-box}
+body {
+    width:100%;
+    max-width: 1500px;
+/*    font-family: Verdana, sans-serif; */
+    margin:auto;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width:inherit;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+/*  position: absolute;*/
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    
+    
+ div.dlalwl {margin-top: 60px}
+    
+    div.gallery {
+  border: 1px solid #ccc; 
+}
+
+div.gallery:hover {
+  border: 1px solid #777;  
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/*
+
+* {
+  box-sizing: border-box;
+}
+*/
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+/*  width: 24.99999%;*/
+    width:33%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+    
+
+/*****header*****************************/
+header {
+    /*    position: absolute;*/
+    /*
+    top: 0;
+    left: 0;
+*/
+    width: 100%;
+    /***********insert *************/
+    max-width: 1500px;
+    margin: auto;
+
+
+
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+    /*    z-index: 1000;*/
+}
+
+/*
+
+.head1 a, .headA img, .headC, .headB {
+    font-family: 'Oswald', sans-serif;
+}
+*/
+/*logo*/
+.headA {
+    display: inline-block;
+    line-height: 70px;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.head1 {
+    background-color: #2B5566;
+    color: white;
+    height: 45px;
+    text-align: right;
+}
+
+.head1 a {
+    color: white
+}
+
+.head1 a:visited,
+.head1 a:hover,
+.head1 a:link {
+    text-decoration: none;
+    color: yellow;
+}
+
+/*
+.head1 h1 {
+    font-size: 5em;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+*/
+/*navigation*/
+.headB {
+    /*    max-width: 1500px;*/
+    margin: auto;
+}
+
+.headB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.headB a {
+    display: block;
+    padding: 15px;
+    color: inherit;
+    font-size: 24px;
+    text-decoration: none;
+
+
+}
+
+.headB a:hover {
+    background-color: #2B5566;
+    color: whitesmoke;
+}
+
+/***********************************************/
+/*큰 화면 설정*/
+@media (min-width:768px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .headB ul {
+        display: flex;
+    }
+
+    .headB a {
+        font-size: 14px;
+    }
+
+    .headC {
+        display: none;
+        /*        margin-right: 100%;        */
+    }
+
+    .headB {
+        display: block !important;
+    }
+}
+
+/*작은 화면 설정*/
+@media (max-width: 767px) {
+    header .container-small {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .headB {
+        display: none
+    }
+
+    .headC {
+        outline: none;
+        border: none;
+        background: none;
+        padding: 0;
+        margin-right: 10px;
+        font-size: 28px;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    .headC:hover {
+        opacity: 0.3
+    }
+}
+
+
+
+/***** css for end.html **********************/
+
+section.A, section.B {
+    margin-top: 50px;
+}
+.gallery {
+    margin-top: 10px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.B .container{
+   padding-top: 2px; font-variant: small-caps;
+}
+.B text{
+    padding: 0;
+}
+.B h2{
+    margin-top: 0; margin-bottom: 30px;
+    font-size: 30px; text-decoration-line: underline
+}
+.B p{
+    margin-top: 0; margin-bottom: 20px; font-size: 18px; line-height: 1.6; opacity: 0.8;
+}
+
+.B .photo{
+    background-image: url(../images/cob.jpg);
+    min-height: 200px;
+    background-position: center; background-size: cover;
+}
+
+@media(min-width: 768px){
+    .B .container{
+        flex-direction: row-reverse;
+        display: flex; max-width: 1000px;
+        margin: auto;
+        padding: 50px 0; 
+            
+    }
+    .B .photo{flex: 0 0 700px}
+    .B .text{flex: 1; color: black}
+}
+
+         
+
+/****************************************************/
+
+/*footer: 주소, sns, submenu */
+
+footer {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    background-color: #5D9AB2;
+    color: #fff;
+    width: 100%;
+}
+
+
+footer .container {
+
+    /*    min-height: 700px;*/
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+
+
+.footA {
+    margin-bottom: 30px;
+    display: inline-block;
+
+}
+
+.footA h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+.footA p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px
+}
+
+.footA a {
+    color: inherit;
+    text-decoration: none
+}
+
+.footB div {
+    margin-bottom: 20px
+}
+
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid currentColor;
+    font-size: 14px
+}
+
+.footB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.footB a {
+    display: block;
+    padding: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footB a:hover {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+@media(max-width: 768px) {
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .footA {
+        flex: 0 0 60%;
+    }
+
+    .footB {
+        flex: 0 0 60%;
+    }
+
+    .footC {
+        flex: -20px;
+        display: inline-block;
+        text-align: center;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .footB {
+        display: flex;
+    }
+
+    .footB div {
+        flex: 1
+    }
+
+    .footB div:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.footC {
+    /*    bottom: 20px;*/
+    width: 100%;
+    max-width: 1500px;
+    /*    margin-top: 20px;*/
+    line-height: 4em;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /*    position: fixed;*/
+    /*    bottom: 20px;*/
+    /*    display: inline-block;*/
+    /*    margin-bottom: 50%;*/
+    padding: 0;
+    color: #2B5566;
+
+}
+
+.footD {
+    margin-top: 20px;
+}
+
+.footD ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footD a {
+    display: block;
+    margin-right: 8px;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 50%
+}
+
+.footD a:hover {
+    background-color: rgba(0, 0, 0, 0.3)
+}

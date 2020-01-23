@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News content page</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+    <!--    <link rel="stylesheet" href="./css/style.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"> </script>
+
+
+    <link rel="stylesheet" href="../css/news.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+    <script>
+        $(function() {
+            $('.headC').click(function() {
+                $('.headB').slideToggle();
+            });
+        });
+    </script>
+    <style>
+        input[type="text"] {
+            width: 30%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+            background-color: #ffffff;
+            background-image: url('../images/search.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            background-size: 24px 24px;
+            padding: 10px 10px 10px 20px;
+            transition: 0.4s ease-in-out;
+        }
+
+        input[type="text"]:focus {
+            width: 45%;
+            background-color: whitesmoke;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="head1">
+            <a href="#subscribe">JOIN</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="#login" style="margin-right:20px;">LOGIN</a>
+            <input type="text" name="search" value="Search">
+        </div>
+        <div class="container">
+            <div class="container-small">
+                <a href="../index.html" class="headA">
+                    <img src="../images/logo.jpg" alt="logo" id="vpdtn" width="60px" height="50px"></a>
+                <!--            <img src="/web/html_css_project/images/logo.jpg" alt="logo" id="vpdtn" width="60px" height="50px">ANIMAL</a>-->
+
+                <div class="bnt">
+                    <button type="button" class="headC"><span class="fas fa-bars" title="Menu"></span>MENU</button>
+                </div>
+            </div>
+            <hr style="wdith:100%">
+            <div>
+                <nav class="headB">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#contents">Contents</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#">ABC</a></li>
+                        <li><a href="#">Q&amp;A</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container" id="news_container">
+        <section class="social">
+            <div>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href=""><i class="fab fa-google-plus-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+        <section class="news_article">
+            <div class="img_container">
+                <img src="../images/mD848X1.jpg" alt="">
+                <figcaption>An artist’s depiction of a woolly mammoth STOCKTREK IMAGES INC./ALAMY STOCK PHOTO</figcaption>
+            </div>
+            <div class="art_container">
+                <h2 class="art_title">Should we bring extinct species back from the dead?</h2>
+                <p class="author">By David Shultz</p>
+                <p class="date">Sep. 26, 2016 , 3:00 AM</p>
+                <hr class="seperator">
+                <p class="p_text">
+                    <span style="text-transform: uppercase; font-style: italic">aEarth is in the midst of its sixth mass extinction: </span>Somewhere between 30 and 159 species disappear every day, thanks largely to humans, and more than 300 types of mammals, birds, reptiles, and amphibians have vanished since 1500.
+                    For decades the notion of “de-extinction” hovered on the scientific fringes, but new advances in genetic engineering.
+                    With that prospect in mind, here’s what we know so far about de-extinction:
+                </p>
+                <h3>Why bring back extinct animals?</h3>
+                <p class="p_text">As cool as it might be to visit a zoo filled with woolly mammoths, saber-toothed tigers, and giant tortoises, the best reasons for bringing back extinct animals have more to do with ecology than tourism.
+                </p>
+                <div class="img_container">
+                    <img src="../images/birdDTG523_0.jpg" alt="">
+                    <figcaption>Acient Egypt Bird</figcaption>
+
+                </div>
+                <p class="p_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis provident quae id accusamus inventore. Libero recusandae, sint dicta autem laboriosam asperiores beatae. Voluptatibus vel repudiandae numquam id distinctio quae non excepturi ab tempora voluptatem, laboriosam dignissimos, ut deleniti velit sint! Itaque tempore, voluptatem blanditiis incidunt recusandae atque! Quia, pariatur, aspernatur.</p>
+                <p class="p_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, necessitatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nesciunt ipsam ad nobis porro fugit culpa. Recusandae iste aut ratione quidem libero fugiat, itaque hic rerum accusantium ducimus placeat, natus? Voluptas facere deserunt dolorum unde quibusdam error alias optio vero culpa, aspernatur, ipsum cum incidunt adipisci ullam doloribus. Facere, nostrum.</p>
+                <hr class="seperator">
+                <div class="art_tail">
+                    <p class="p_end">Posted in: BiologyPlants &amp; Animals</p>
+                    <p class="p_end">:10.1126/science.aah7343</p><br>
+                    <p class="p_end">David AAA <i class="fab fa-twitter-square"></i></p>
+                </div>
+                <hr class="seperator">
+                <div class="in_newslist">
+                    <h2>Popular News</h2>
+                    <div class="news_image">
+                        <div class="article">
+                            <img src="../images/001.jpg" alt="">
+                            <div class="art_text">
+                                <a href="news_list.html">
+                                    <h6>United Kingdom to embark...</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="art_text">
+                                <img src="../images/002.jpg" alt="">
+                                <a href="news_list.html">
+                                    <h6>Lorem ipsum dolor sit ipsum dolor sit?</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="art_text">
+                                <img src="../images/003.jpg" alt="">
+                                <a href="news_list.html">
+                                    <h6>United Kingdom to embark...</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="art_text">
+                                <img src="../images/004.jpg" alt="">
+                                <a href="news_list.html">
+                                    <h6>Lorem ipsum dolor sit ?</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="art_text">
+                                <img src="../images/005.jpg" alt="">
+                                <a href="news_list.html">
+                                    <h6>United Kingdom to embark...</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="art_text">
+                                <img src="../images/006.jpg" alt="">
+                                <a href="news_list.html">
+                                    <h6>Lorem ipsum dolor sit ?</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <div class="aside">
+            <h2>Upcoming Event</h2>
+            <a href="news_list.html">
+                <div class="schedule">
+                    <p class="evdate">feb <br><span style="font-size:1.5em; font-weight:bold;">5</span><br>2020</p>
+                    <div class="evcontainer">
+                        <p class="schedule_title">Lorem ipsum dolor sit amet.</p>
+                        <p class="schedule_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </a>
+            <a href="news_list.html">
+                <div class="schedule">
+                    <p class="evdate">mar <br><span style="font-size:1.5em; font-weight:bold;">5</span><br>2020</p>
+                    <div class="evcontainer">
+                        <p class="schedule_title">Debitis eum quis laudantium, voluptates, a iure tempore?</p>
+                        <p class="schedule_text">consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </a>
+            <a href="news_list.html">
+                <div class="schedule">
+                    <p class="evdate">Apr<br><span style="font-size:1.5em; font-weight:bold;">5</span><br>2020</p>
+                    <div class="evcontainer">
+                        <p class="schedule_title">repudiandae nihil id.</p>
+                        <p class="schedule_text">molestias! Fuga consequuntur debitis soluta veniam! Ducimus praesentium, aliquid, tempore vitae! </p>
+                    </div>
+                </div>
+            </a>
+            <h2>Job Opportunity</h2>
+            <a href="https://www.google.com/search?q=google+job+usa&oq=google+job+usa&aqs=chrome..69i57j0l6j69i64.6287j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs&sa=X&ved=2ahUKEwj255u4zZLnAhUBMd4KHZmPBe4Qp4wCMAB6BAgNEAE#htidocid=9NTh7ZgYG-FS8lMRAAAAAA%3D%3D&sxsrf=ACYBGNToPp51C0Id9Nw-QxCz7wTUNNzjIA:1579537960209">
+                <div class="job">
+                    <p class="job_title"><em><i class="fab fa-google" style="color:blue"> </i></em> Software Engineer</p>
+                    <p class="job_text">engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. </p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=google+job+usa&oq=google+job+usa&aqs=chrome..69i57j0l6j69i64.6287j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs&sa=X&ved=2ahUKEwj255u4zZLnAhUBMd4KHZmPBe4Qp4wCMAB6BAgNEAE#htidocid=9NTh7ZgYG-FS8lMRAAAAAA%3D%3D&sxsrf=ACYBGNToPp51C0Id9Nw-QxCz7wTUNNzjIA:1579537960209">
+                <div class="job">
+                    <p class="job_title"><em><i class="fas fa-jedi" style="color:green"></i></em> Jedi, leaders and peacekeepers in the Star Wars universe. </p>
+                    <p class="job_text">Various careers, occupations, ranks and titles were available to all Jedi. the Jedi study and utilize the Force, in order to help and protect those in need. </p>
+                </div>
+            </a>
+
+            <a href="https://www.google.com/search?q=google+job+usa&oq=google+job+usa&aqs=chrome..69i57j0l6j69i64.6287j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs&sa=X&ved=2ahUKEwj255u4zZLnAhUBMd4KHZmPBe4Qp4wCMAB6BAgNEAE#htidocid=PHyg0C6-kRk0IW-5AAAAAA%3D%3D&sxsrf=ACYBGNToPp51C0Id9Nw-QxCz7wTUNNzjIA:1579537960209&htivrt=jobs&fpstate=tldetail">
+                <div class="job">
+                    <p class="job_title"><em><i class="fab fa-google" style="color:blue"> </i></em> Software Engineer, Front End</p>
+                    <p class="job_text">engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. </p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+
+            <nav class="footB">
+                <div>
+                    <h3>LATEST</h3>
+                    <ul>
+                        <li><a href="">LATESTUPDATE</a></li>
+                        <li><a href="">BLOGS</a></li>
+                        <li><a href="">SUCCESSSTORIES</a></li>
+                        <li><a href="">AWARDS</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>OUR WORK</h3>
+                    <ul>
+                        <li><a href="#">FORESTS</a></li>
+                        <li><a href="#">OCEANS</a></li>
+                        <li><a href="#">FRESHWATER</a></li>
+                        <li><a href="#">WILDLIFE</a></li>
+                        <li><a href="#">PEOPLE</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>CONTENTS</h3>
+                    <ul>
+                        <li><a href="">SCHOOLRESOURCE</a></li>
+                        <li><a href="">RPIORITYSPECIES</a></li>
+                        <li><a href="">WWF&amp;THESDGS</a></li>
+                        <li><a href="">RPIORITYSPECIES</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h2>ANIMAL</h2>
+                    <p>Save the Endangered Species.<br>
+                        <a href="http://logger.net"></a></p>
+                    <nav class="footD">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-twitter" title="twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook" title="facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" title="google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram" title="instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube" title="youtobe"></i></a></li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+            </nav>
+
+        </div>
+        <div class="footC">
+            &copy; Animal corp. All right Reserved.
+            Save the Endangered Species.
+        </div>
+    </footer>
+
+
+</body></html>

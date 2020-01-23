@@ -1,0 +1,525 @@
+﻿@charset "UTF-8";
+:root {
+    --max-header-width: 1500px;
+    --max-content-width: 1050px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/*header*/
+/*logo*/
+header {
+    /*    position: absolute;*/
+    /*
+    top: 0;
+    left: 0;
+*/
+    width: 100%;
+    /***********insert *************/
+    max-width: 1500px;
+    margin: auto;
+
+
+
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+    /*    z-index: 1000;*/
+}
+
+
+/*logo*/
+.headA {
+    display: inline-block;
+    line-height: 70px;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.head1 {
+    background-color: #2B5566;
+    color: white;
+    height: 45px;
+    text-align: right;
+}
+
+.head1 a {
+    color: white
+}
+
+.head1 a:visited,
+.head1 a:hover,
+.head1 a:link {
+    text-decoration: none;
+    color: yellow;
+}
+
+/*
+.head1 h1 {
+    font-size: 5em;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+*/
+/*navigation*/
+.headB {
+    /*    max-width: 1500px;*/
+    margin: auto;
+}
+
+.headB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.headB a {
+    display: block;
+    padding: 15px;
+    color: inherit;
+    font-size: 24px;
+    text-decoration: none;
+
+
+}
+
+.headB a:hover {
+    background-color: #2B5566;
+    color: whitesmoke;
+}
+
+
+/*큰 화면 설정*/
+/*-- ywjeong ---@media (min-width:768px)and(max-width:900px) {*/
+@media (min-width:768px){
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .headB ul {
+        display: flex;
+    }
+
+    .headB a {
+        font-size: 14px;
+    }
+
+    .headC {
+        display: none;
+        /*        margin-right: 100%;        */
+    }
+
+    .headB {
+        display: block !important;
+    }
+}
+
+/*작은 화면 설정*/
+/*-- ywjeong ---@media (max-width: 767px)and(min-width:751px) {*/
+@media (max-width: 767px) {
+    header .container-small {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .headB {
+        display: none
+    }
+
+    .headC {
+        outline: none;
+        border: none;
+        background: none;
+        padding: 0;
+        margin-right: 10px;
+        font-size: 28px;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    .headC:hover {
+        opacity: 0.3
+    }
+    section, aside{
+        width:100%;
+    }
+}
+
+
+/***********************************************/
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    margin left: 100%;
+    padding: inherit;
+    display: inline-flex;
+    
+}
+.slide{
+    background-color: lightblue !important;
+}
+
+
+.this{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+/*
+    margin-left: 20%;
+    margin-right: 20%;
+*/
+    width:100%;
+    max-width: 1500px;
+    margin: auto;
+/*
+     display: flex;
+    flex-wrap: wrap;
+*/
+}
+
+/*--ywjeong-- 그릇에는 display:flex, flex-wrap:wrap을 써주고,
+담겨지는 그릇에는 display:inline-block과 담겨질 넓이의 비율(%)을 써준다. */
+.content_body {
+    max-width: 1500px; /* 아무리 커져도 컨텐츠가 타나나는 영역의 최대 넓이 */
+    width:100%;   /* display에 따라 크기가 커지는 것이 필요하므로 이것도 써줌) */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main_section {
+    display:inline-block;  /*-- ywjeong */
+    width: 70%;
+    padding: 25px;
+}
+
+.section_title {
+    text-align: center;
+    padding: 70px 0 20px 0;
+    font-size: 4em;
+}
+
+.section_col {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px 0 0;
+}
+
+article {
+    display:inline-block; /*-- ywjeong --*/
+    width: 50%;
+
+}
+
+.section_col article div {
+    margin: 80px 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+
+}
+
+.section_col article div:hover {
+    box-shadow: 2px 2px 10px gray;
+}
+
+.section_col article div img {
+    width: 100%;
+}
+
+.section_col article div p {
+    padding: 15px 15px 30px;
+    
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+
+}
+
+/*aside*/
+#main_aside {
+    display:inline-block;  /*-- flex로 선언된 곳에 담겨지는 엘리먼트는 필수로 사용해야 함 */
+    width: 30%;
+/*border: 1px solid black;*/
+    padding: 0 10px 0 15px;
+/*
+    padding: 0 10px 0 15px;
+    border-left: 1px solid #aaa;
+*/
+}
+
+.aside_wrap {
+    margin: auto;
+    margin-left: 20px;
+
+}
+
+.aside_title {
+    text-align: center;
+    margin: 90px 0 80px 0;
+    font-size: 2em;
+}
+
+.aside_content {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    margin: 0 0 60px;
+
+}
+
+.aside_content:hover {
+    box-shadow: 3px 3px 10px gray;
+}
+
+.aside_content .schedule_date {
+    width: 20%;
+    padding: 0;
+    word-wrap: normal;
+    text-align: center;
+    border-right: 1px solid gray;
+    font-size: 1em;
+}
+
+.aside_content .schedule_date .month {
+    font-variant: small-caps;
+}
+
+.aside_content .schedule_date .day {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0;
+}
+
+.aside_content .schedule_date .year {
+    font-size: 0.8em;
+    padding: 0;
+}
+
+.aside_content .schedule_content {
+    width: 80%;
+    padding: 10px;
+}
+
+.aside_content .schedule_content .schedule_title {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+.aside_content .schedule_content .schedule_text {
+    font-size: 0.6em;
+    padding-bottom: 10px;
+}
+/*@media screen and (min-width:751px) and (max-width:900px) {*/
+@media screen and (max-width:850px) {
+    #main_section{ width:100%}
+    #main_aside{width:100%}
+    .container h1 {        text-align: center;    }
+    .container .article {        width: 50%    }
+    .footB{width:100%; padding-right: 0; margin:20px;}
+    .2ndFooter{width:100%;}
+   }
+
+@media screen and (max-width:500px) {
+    #main_section{width:100%}
+    #main_aside{width:100%}
+    .article{width:100%}
+    
+    .container h1 {        text-align: center;    }
+    .section .container {        width: 100%;    }
+    .section .aside {        width: 100%;        border-left: 0;    }
+    .container .article {        width: 100%    }
+    .article img {        width: 100%;        margin-right: 40px;    }
+    .section .aside {        width: 100%;    }
+    .2ndFooter{padding-left:30px;}
+}
+
+
+footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        width: 100%;
+        margin: auto;
+    }
+
+.footA{display:inline-block;}
+.footB{display:inline-block;}
+.footB{display:inline-block;}
+/*
+    .footA {        flex: 0 0 60%;    }
+    .footB {        flex: 0 0 60%;    }
+    .footC {
+        flex: -20px;
+        display: inline-block;
+        text-align: center;
+    }
+*/
+
+/*
+
+@media(min-width: 768px) {
+    .footB {
+        display: flex;
+    }
+
+    .footB div {
+        flex: 1
+    }
+
+    .footB div:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+*/
+/****************************************************/
+
+/*footer: 주소, sns, submenu */
+
+footer {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    background-color: #5D9AB2;
+    color: #fff;
+    width: 100%;
+}
+
+
+footer .container {
+
+    /*    min-height: 700px;*/
+    margin: auto;
+    padding: 40px 20px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.footB{width:70%; justify-content: space-between; display:inline-block; display:flex;flex-wrap: wrap;margin-right: 50px;padding-right: 50px;}
+.2ndFooter{width:30%; }
+
+.footA {
+    margin-bottom: 30px;
+    display: inline-block;
+
+}
+
+.footA h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+.footA p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px
+}
+
+.footA a {
+    color: inherit;
+    text-decoration: none
+}
+
+.footB div {
+    margin-bottom: 20px
+}
+
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid currentColor;
+    font-size: 14px
+}
+
+.footB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.footB a {
+    display: block;
+    padding: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footB a:hover {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+
+
+.footC {
+    /*    bottom: 20px;*/
+    width: 100%;
+    max-width: 1500px;
+    /*    margin-top: 20px;*/
+    line-height: 4em;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /*    position: fixed;*/
+    /*    bottom: 20px;*/
+    /*    display: inline-block;*/
+    /*    margin-bottom: 50%;*/
+    padding: 0;
+    color: #2B5566;
+
+}
+
+.footD {
+    margin-top: 20px;
+}
+
+.footD ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footD a {
+    display: block;
+    margin-right: 8px;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 50%
+}
+
+.footD a:hover {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
